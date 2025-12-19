@@ -229,7 +229,7 @@ function Publier() {
 
   try {
     const res = await axios.post(
-      "http://localhost:8080/harfa/add_pub.php",
+      "https://soc-net.info/harfa/add_pub.php",
       formData,
       {
         headers: {
