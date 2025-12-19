@@ -268,7 +268,7 @@ const handleFindNearby = (adsData) => {
 
   try {
     const res = await axios.post(
-      "http://localhost:8080/harfa/filter.php",
+      "https://soc-net.info/harfa/filter.php",
       formData
     );
 
@@ -282,7 +282,7 @@ const handleFindNearby = (adsData) => {
 
 useEffect(() => {
   const fetchAds = async () => {
-    const response = await axios.get("http://localhost:8080/harfa/getAds.php");
+    const response = await axios.get("https://soc-net.info/harfa/getAds.php");
     setAds(response.data);
   };
 
