@@ -6,7 +6,7 @@ function GoogleAuth({ onLogin }) {
   const handleLogin = async (credentialResponse) => {
     try {
       const res = await axios.post(
-        'http://localhost:8080/harfa/google-login.php',
+        'https://soc-net.info/harfa/google-login.php',
         { token: credentialResponse.credential }
       );
       
