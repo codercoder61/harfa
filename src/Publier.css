@@ -1,0 +1,129 @@
+.overlay{
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+    width: 100% !important;
+    height: 100%;
+    z-index:1450;
+    position: fixed;
+    top:0;
+    bottom:0;
+    left: 0;
+}
+.form{
+        height: fit-content;
+        width: 90%;
+    }
+
+    .form{
+        --fa-style-family-brands: "Font Awesome 6 Brands";
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+    font-family: Poppins,sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    top: 50%;
+    z-index: 1520;
+    background-color: #fff;
+    left: 50%;
+    opacity: 1;
+    padding: 30px;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    height: fit-content;
+    width: 90% !important; 
+}
+
+#close1 {
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    top: 50px;
+}
+
+#main > div.form > div > div.leaflet-container.leaflet-touch.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag.leaflet-touch-zoom{
+        --fa-style-family-brands: "Font Awesome 6 Brands";
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+    --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
+    cursor: grab;
+    background: #ddd;
+    outline-offset: 1px;
+    font-family: Helvetica Neue,Arial,Helvetica,sans-serif;
+    font-size: .75rem;
+    line-height: 1.5;
+    touch-action: none;
+    height: 400px;
+    width: 100%;
+    position: relative;
+} 
+
+#first img{
+    width: 30px;
+    background-color: #eee;
+    border-radius: 50%;
+    padding: 2px;
+    margin-right: 5px;
+}
+
+#first input:focus,#first textarea:focus{
+    border: 1px solid rgb(15, 119, 236);
+    outline: 1px solid rgb(15, 119, 236);
+}
+#first input,#first textarea{
+    outline:none;
+    padding:15px 10px;
+    margin:10px 0;
+    border:1px solid #aaa;
+    border-radius:5px;
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid rgb(182, 181, 181);
+    box-shadow: 0 0 4px rgb(119, 119, 119);
+    align-items: center;
+    background-color:#fff;
+    box-shadow:0 0 4px #eee;
+    position:fixed;
+    bottom:0;
+    text-align:right;
+    width:100%;
+    padding:20px 10px;
+}
+
+footer button{
+    background-color: #3aa4ff;
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+    outline: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 150px;
+}
+
+footer button:hover{
+    background-color: rgb(3, 84, 131);
+}
+select:focus{
+    outline: none;
+}
+.images{
+    width:100px !important;
+    object-fit: cover;
+    height: 100px !important;
+    border-radius: unset !important;
+    box-shadow: 0 0 14px #eee;
+}
