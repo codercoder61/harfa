@@ -174,6 +174,10 @@ const SelectLocationMap = ({ position, setPosition, addressInput, setAddressInpu
 };
 
 function Ads() {
+	useEffect(() => {
+  document.body.style.overflow = open ? 'hidden' : 'auto';
+}, [open]);
+
 	const aside11 = useRef(null)
 	const [open, setOpen] = useState(false);
 
