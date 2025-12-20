@@ -665,7 +665,7 @@ useEffect(() => {
             <button onClick={()=>{setMapVisible(true)}} className="conf2"><i className="fa-regular fa-map"></i> Ouvrir la carte</button><br/>
             <span style={{color:'gray',margin:'10px'}}>Salaire/Prix</span><br/>
 
-            <div style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+            <div style={{margin: 'auto';display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
               <div style={{borderBottomRightRadius:'12px',borderTopRightRadius:'12px',borderTopLeftRadius:'12px',borderBottomLeftRadius:'12px',padding:'10px',margin:'10px',border:border1?'2px solid rgb(15, 119, 236)':'2px solid black',width:"90%"}}>
                   <input min="0" onBlur={()=>{setBorder1(!border1)}} onFocus={()=>{setBorder1(!border1)}} style={{marginLeft:'10px',border:"none",outline:"none"}} type="number" onChange={(e)=>setMin(e.target.value)} value={min} placeholder='Min'/>
                   <span style={{color:border1?'rgb(15, 119, 236)':'black'}}>DH</span>
