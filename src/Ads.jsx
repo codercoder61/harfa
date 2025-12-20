@@ -679,7 +679,7 @@ useEffect(() => {
 
 
             <span style={{color:'gray',margin:'10px'}}>Type d'annonce</span><br/>
-            <div style={{margin:'10px'}}>
+            <div style={{margin:'10px auto'}}>
               <span onClick={()=>setType(1)} style={{border:type===1?"1px solid rgb(15, 119, 236)":"",color:type===1?"rgb(15, 119, 236)":""}} className="type">Offre</span>
               <span onClick={()=>setType(2)} style={{border:type===2?"1px solid rgb(15, 119, 236)":"",color:type===2?"rgb(15, 119, 236)":"",margin:'10px'}} className="type">Demande</span>
             </div>
