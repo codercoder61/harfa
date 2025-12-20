@@ -175,7 +175,15 @@ const SelectLocationMap = ({ position, setPosition, addressInput, setAddressInpu
 
 function Ads() {
 	const [open, setOpen] = useState(false);
-	
+	  const [isMobile, setIsMobile] = useState(window.innerWidth < 400);
+useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 400);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [])
 	useEffect(() => {
   document.body.style.overflow = open ? 'hidden' : 'auto';
 }, [open]);
@@ -464,7 +472,9 @@ useEffect(() => {
 
     <div id='main'>
 
-      {aside1 && <aside style={{display: open ? 'flex' : 'none'}} ref={aside11} id='bn'>
+      {aside1 && <aside style={{
+    display: open && isMobile ? "flex" : "none"
+  }} ref={aside11} id='bn'>
         <h3 style={{margin:'10px 0'}}>Sélectionner la catégorie:</h3>
         <div style={{display:'flex',flexDirection:'column'}}>
           <div className={isActive(1, 0) ? "active-option" : ""}>
@@ -633,7 +643,9 @@ useEffect(() => {
           {isHovered && <i className="fa-solid fa-caret-right"></i>}  
         </button></div>
       </aside>}
-      {aside2 && <aside style={{display: open ? 'flex' : 'none'}} ref={aside22} id='op'>
+      {aside2 && <aside style={{
+    display: open && isMobile ? "flex" : "none"
+  }} ref={aside22} id='op'>
         <span style={{cursor:'pointer',display:'inline-block',margin:'20px 0 10px 15px'}} onClick={handleBack}><i className="fa-solid fa-caret-left"></i> Retour</span>
         <form onSubmit={handleSubmit}>
             <div style={{border:border?'2px solid rgb(15, 119, 236)':'2px solid black',width:"90%",borderRadius:'20px',padding:'10px',margin:"10px 0 10px 10px"}}>
