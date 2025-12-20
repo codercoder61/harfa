@@ -639,7 +639,7 @@ useEffect(() => {
 
 <div style={{textAlign:'center',width:'100%',margin:"auto"}}>
 <button onClick={()=>{setAside1(false);setAside2(true);}} style={{alignItems:'center',justifyContent:'center',backgroundColor:isHovered?"#2455cc":"#2E6BFF"}} onMouseLeave={()=>{setIsHovered(false)}} onMouseEnter={()=>{setIsHovered(true)}} className="conf">
-          Confirmer
+          
           {isHovered && <i className="fa-solid fa-caret-right"></i>}  
         </button></div>
       </aside>}
@@ -680,7 +680,7 @@ useEffect(() => {
             <h5 style={{color:'gray',margin:'10px'}}>Service Range ({range} km)</h5>
                     <input style={{margin:'10px'}} value={range} onChange={handleRangeChange} type="range" min="0" max="100" className="slider" id="myRange"/>
             <div style={{textAlign:'center',width:'100%',margin:"auto"}}>
-<button style={{alignItems:'center',justifyContent:'center',backgroundColor:isHovered?"#2455cc":"#2E6BFF"}} onMouseLeave={()=>{setIsHovered(false)}} onMouseEnter={()=>{setIsHovered(true)}} className="conf" onClick={()=>{sendData();setOpen(false);}}>
+<button style={{alignItems:'center',justifyContent:'center',backgroundColor:isHovered?"#2455cc":"#2E6BFF"}} onMouseLeave={()=>{setIsHovered(false)}} onMouseEnter={()=>{setIsHovered(true)}} className="conf" onClick={()=>{sendData();setOpen(true);}}>
           Confirmer
           {isHovered && <i className="fa-solid fa-caret-right"></i>}  
         </button></div>
