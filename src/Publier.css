@@ -120,6 +120,15 @@ footer button:hover{
 select:focus{
     outline: none;
 }
+#com{
+    flex:2;
+    padding:20px;
+}
+@media screen and (max-device-width:400px){
+    #com{
+        display:none;
+    }
+}
 .images{
     width:100px !important;
     object-fit: cover;
