@@ -9,7 +9,7 @@
     margin: 10px;
 }
 
-.overlay{
+.overlayy,.overlay{
     opacity: 0.5;
     width: 100%;
     position: fixed;
@@ -20,6 +20,9 @@
     height:100vh;
     z-index:400;
     background-color:#ccc;
+}
+.overlay{
+    display:none;
 }
 
 #main aside div div{
