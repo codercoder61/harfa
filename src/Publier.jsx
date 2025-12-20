@@ -278,7 +278,7 @@ const handleCategoryChange = (id) => {
                 setPosition={setPosition}
                 addressInput={addressInput}
                 setAddressInput={setAddressInput}
-              /></div> <button onClick={()=>{setFlag(true);document.body.style.overflow='unset';setMapVisible(false)}} style={{cursor:'pointer',position:'absolute',right:'40px',bottom: '-90px',backgroundColor:'#fb9300',border:'none',outline:'none',color:'white',padding:'10px 20px',borderRadius:'10px'}}>Enregistrer</button>    
+              /></div> <button onClick={()=>{setFlag(true);document.body.style.overflow='unset';setMapVisible(false)}} id='enre'>Enregistrer</button>    
         </div>}
     {isMapVisible && <div className='overlayy'></div>}
       <Header/>
