@@ -287,6 +287,13 @@ aside{
     justify-content: center;
     align-items: center;
 }
+.overlay{
+    width:100%;
+    height:100vh;
+    z-index:400;
+    background-color:#ccc;
+    opacity:0.5;
+}
 @media screen and (max-width: 400px) {
     #kala{
         margin:50px auto;
@@ -313,5 +320,8 @@ aside{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    #logo h1{
+        font-size: 1.6em;
     }
 }
