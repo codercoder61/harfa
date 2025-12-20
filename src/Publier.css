@@ -138,7 +138,10 @@ select:focus{
     flex:2;
     padding:20px;
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:450px){
+    #fafa{
+margin:120px auto;
+}
     #com{
         display:none;
     }
@@ -165,4 +168,8 @@ select:focus{
     height: 100px !important;
     border-radius: unset !important;
     box-shadow: 0 0 14px #eee;
+}
+
+#fafa{
+margin:90px auto;display:flex;justify-content:center;width:80%;
 }
