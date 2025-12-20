@@ -174,11 +174,11 @@ const SelectLocationMap = ({ position, setPosition, addressInput, setAddressInpu
 };
 
 function Ads() {
-	const [open, setOpen] = useState(false);
+	const [open, setOpen] = useState(true);
 	  const [isMobile, setIsMobile] = useState(window.innerWidth < 400);
 useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth > 400);
+      setIsMobile(window.innerWidth < 400);
     };
 
     window.addEventListener("resize", handleResize);
@@ -473,7 +473,7 @@ useEffect(() => {
     <div id='main'>
 
       {aside1 && <aside style={{
-    display: isMobile ? "none" : open? "flex": "none"
+    display: open && !isMobile ? "flex": "none"
   }} ref={aside11} id='bn'>
         <h3 style={{margin:'10px 0'}}>Sélectionner la catégorie:</h3>
         <div style={{display:'flex',flexDirection:'column'}}>
@@ -644,7 +644,7 @@ useEffect(() => {
         </button></div>
       </aside>}
       {aside2 && <aside style={{
-    display: isMobile ? "none" : open? "flex": "none"
+    display:  open &&& !isMobile ? "flex": "none"
   }} ref={aside22} id='op'>
         <span style={{cursor:'pointer',display:'inline-block',margin:'20px 0 10px 15px'}} onClick={handleBack}><i className="fa-solid fa-caret-left"></i> Retour</span>
         <form onSubmit={handleSubmit}>
