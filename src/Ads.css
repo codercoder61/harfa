@@ -296,6 +296,7 @@ aside{
     align-items: center;
     z-index:600;
     display:none;
+    box-shadow: 0 0 14px #000;
 }
 
 @media screen and (max-width: 400px) {
