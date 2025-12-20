@@ -276,6 +276,7 @@ const handleFindNearby = (adsData) => {
   return -1; // entreprise not found
 }
     const sendData = async () => {
+		setAds([])
 		setLoading(true)
   const formData = new FormData();
 
