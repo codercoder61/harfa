@@ -392,6 +392,7 @@ useEffect(() => {
 
     const handleBack = ()=>{
       setAside1(true);
+		 aside11.current.style.display = 'flex';
       setAside2(false)
     }
 
@@ -621,7 +622,7 @@ useEffect(() => {
 
 
 <div style={{textAlign:'center',width:'100%',margin:"auto"}}>
-<button onClick={()=>{setAside1(false);setAside2(true)}} style={{alignItems:'center',justifyContent:'center',backgroundColor:isHovered?"#2455cc":"#2E6BFF"}} onMouseLeave={()=>{setIsHovered(false)}} onMouseEnter={()=>{setIsHovered(true)}} className="conf">
+<button onClick={()=>{aside22.current.style.display = 'flex';setAside1(false);setAside2(true)}} style={{alignItems:'center',justifyContent:'center',backgroundColor:isHovered?"#2455cc":"#2E6BFF"}} onMouseLeave={()=>{setIsHovered(false)}} onMouseEnter={()=>{setIsHovered(true)}} className="conf">
           Confirmer
           {isHovered && <i className="fa-solid fa-caret-right"></i>}  
         </button></div>
@@ -722,7 +723,8 @@ useEffect(() => {
   onClick={() => {
     if (
       aside11.current.style.display === 'none' ||
-      aside11.current.style.display === ''
+      aside11.current.style.display === '' || 
+      over.current.style.display = 'none'
     ) {
       aside11.current.style.display = 'flex';
       over.current.style.display = 'block';
