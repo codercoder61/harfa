@@ -299,7 +299,7 @@ aside{
 }
 @media screen and (max-width: 400px) {
     #bas{
-    display:block;
+    display:flex;
     }
     #kala{
         margin:50px auto;
