@@ -149,7 +149,7 @@ input::placeholder {
     background-color: #fff;
     left: 50%;
     opacity: 1;
-    padding: 30px;
+    padding:5px;
     position: fixed;
     transform: translate(-50%,-50%);
     height: fit-content;
