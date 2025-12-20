@@ -152,8 +152,6 @@ select:focus{
 }
 #enre{
      cursor:pointer;
-     position:absolute;
-     right:40px;
      background-color:#fb9300;
      border:none;
      outline:none;
