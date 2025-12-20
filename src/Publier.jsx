@@ -282,7 +282,7 @@ const handleCategoryChange = (id) => {
         </div>}
     {isMapVisible && <div className='overlayy'></div>}
       <Header/>
-      <div style={{margin:'90px auto',display:'flex',justifyContent:'center',width:'80%'}}>
+      <div id='fafa'>
         <div id='first' style={{flex:4}}>
             <h1>Qu'annoncez-vous aujourd'hui ?</h1><br/>
             <p>Grâce à ces informations les acheteurs peuvent trouver votre annonce plus facilement</p><br/>
