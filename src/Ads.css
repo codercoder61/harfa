@@ -299,7 +299,7 @@ aside{
     box-shadow: 0 0 14px #000;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .ad{
         margin: 10px 0 20px 0;
     }
@@ -307,7 +307,7 @@ aside{
     display:flex;
     }
     #kala{
-        margin:70px auto;
+        margin:80px auto;
     }
     #kala h1{
         text-align:center;
