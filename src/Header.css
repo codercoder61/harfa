@@ -49,3 +49,8 @@ a,a:visited{
 #logo{
     color:#000;
 }
+@media screen and (max-width:350px}{
+    header{
+       flex-direction: column;          
+    }
+}
