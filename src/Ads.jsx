@@ -174,6 +174,8 @@ const SelectLocationMap = ({ position, setPosition, addressInput, setAddressInpu
 };
 
 function Ads() {
+	const aside1 = useRef(null)
+	const aside2 = useRef(null)
   const handleRangeChange = (e)=>{
             setRange(e.target.value)
         }
@@ -453,7 +455,7 @@ useEffect(() => {
 
     <div id='main'>
 
-      {aside1 && <aside id='bn'>
+      {aside1 && <aside ref={aside1} id='bn'>
         <h3 style={{margin:'10px 0'}}>Sélectionner la catégorie:</h3>
         <div style={{display:'flex',flexDirection:'column'}}>
           <div className={isActive(1, 0) ? "active-option" : ""}>
@@ -622,7 +624,7 @@ useEffect(() => {
           {isHovered && <i className="fa-solid fa-caret-right"></i>}  
         </button></div>
       </aside>}
-      {aside2 && <aside id='op'>
+      {aside2 && <aside ref={aside2} id='op'>
         <span style={{cursor:'pointer',display:'inline-block',margin:'20px 0 10px 15px'}} onClick={handleBack}><i className="fa-solid fa-caret-left"></i> Retour</span>
         <form onSubmit={handleSubmit}>
             <div style={{border:border?'2px solid rgb(15, 119, 236)':'2px solid black',width:"90%",borderRadius:'20px',padding:'10px',margin:"10px 0 10px 10px"}}>
