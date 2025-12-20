@@ -176,6 +176,8 @@ const SelectLocationMap = ({ position, setPosition, addressInput, setAddressInpu
 function Ads() {
 	const aside11 = useRef(null)
 	const aside22 = useRef(null)
+	const filt = useRef(null)
+	const over = useRef(null)
   const handleRangeChange = (e)=>{
             setRange(e.target.value)
         }
@@ -714,8 +716,18 @@ useEffect(() => {
     {isMapVisible && <div className='overlay'></div>}
       
     </div>
-  <div id='bas'><i id="fil" className="fa-solid fa-filter"></i></div>
-	  <div className="overlay"></div>
+  <div onClick={() => {
+  if (aside11.current.style.display === 'none') {
+    aside11.current.style.display = 'flex';
+    over.current.style.display = 'block';
+  } else {
+    aside11.current.style.display = 'none';
+    over.current.style.display = 'none';
+  }
+}}
+
+  }} ref={filt} id='bas'><i id="fil" className="fa-solid fa-filter"></i></div>
+	  <div ref={over} className="overlay"></div>
   </>
   )
 }
