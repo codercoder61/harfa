@@ -719,20 +719,20 @@ useEffect(() => {
     {isMapVisible && <div className='overlay'></div>}
       
     </div>
-  <div
+<div
   ref={filt}
   id="bas"
-onClick={() => setOpen(true)}
-}}
-
-
+  onClick={() => setOpen(true)}
 >
   <i id="fil" className="fa-solid fa-filter"></i>
 </div>
 
-	  <div className="overlay"
+<div
+  className="overlay"
   style={{ display: open ? 'block' : 'none' }}
-  onClick={() => setOpen(false)}></div>
+  onClick={() => setOpen(false)}
+></div>
+
   </>
   )
 }
