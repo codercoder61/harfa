@@ -640,7 +640,7 @@ useEffect(() => {
 <div style={{textAlign:'center',width:'100%',margin:"auto"}}>
 <button onClick={()=>{setAside1(false);setAside2(true);}} style={{alignItems:'center',justifyContent:'center',backgroundColor:isHovered?"#2455cc":"#2E6BFF"}} onMouseLeave={()=>{setIsHovered(false)}} onMouseEnter={()=>{setIsHovered(true)}} className="conf">
           
-          {isHovered && <i className="fa-solid fa-caret-right"></i>}  
+          {isHovered && <i className="fa-solid fa-caret-right"></i>}  Confirmer
         </button></div>
       </aside>}
       {aside2 && <aside style={{
