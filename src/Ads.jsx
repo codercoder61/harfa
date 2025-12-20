@@ -716,17 +716,25 @@ useEffect(() => {
     {isMapVisible && <div className='overlay'></div>}
       
     </div>
-  <div onClick={() => {
-  if (aside11.current.style.display === 'none') {
-    aside11.current.style.display = 'flex';
-    over.current.style.display = 'block';
-  } else {
-    aside11.current.style.display = 'none';
-    over.current.style.display = 'none';
-  }
-}}
+  <div
+  ref={filt}
+  id="bas"
+  onClick={() => {
+    if (
+      aside11.current.style.display === 'none' ||
+      aside11.current.style.display === ''
+    ) {
+      aside11.current.style.display = 'flex';
+      over.current.style.display = 'block';
+    } else {
+      aside11.current.style.display = 'none';
+      over.current.style.display = 'none';
+    }
+  }}
+>
+  <i id="fil" className="fa-solid fa-filter"></i>
+</div>
 
-  }} ref={filt} id='bas'><i id="fil" className="fa-solid fa-filter"></i></div>
 	  <div ref={over} className="overlay"></div>
   </>
   )
