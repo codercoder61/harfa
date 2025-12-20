@@ -175,6 +175,7 @@ const SelectLocationMap = ({ position, setPosition, addressInput, setAddressInpu
 
 function Ads() {
 	const [open, setOpen] = useState(false);
+	const [loading, setLoading] = useState(true);
 	  const [isMobile, setIsMobile] = useState(window.innerWidth < 400);
 useEffect(() => {
     const handleResize = () => {
@@ -222,6 +223,7 @@ function deg2rad(deg) {
     const [ads, setAds] = useState([]);
 
 const handleFindNearby = (adsData) => {
+	
   if (!position?.lat || !position?.lng) return;
 
   const userLat = Number(position.lat);
@@ -248,6 +250,7 @@ const handleFindNearby = (adsData) => {
     .sort((a, b) => a.distance - b.distance);
 
   setAds(filtered);
+	setLoading(false)
 };
 
 
@@ -303,6 +306,7 @@ useEffect(() => {
   const fetchAds = async () => {
     const response = await axios.get("https://soc-net.info/harfa/getAds.php");
     setAds(response.data);
+	  setLoading(false)
   };
 
   fetchAds();
@@ -700,7 +704,8 @@ useEffect(() => {
         </div>}
       <main id="kala">
         <h1>{ads.length} {ads.length===1?"Annonce":"Annonces"}</h1>
-  {ads.length === 0 ? (
+		  {loading && <div class="loader"></div>}  
+ {!loading && ads.length === 0 ? (
     <p>No ads found.</p>
   ) : (
     <div id='kolo'>
