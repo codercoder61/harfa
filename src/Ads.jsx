@@ -453,7 +453,7 @@ useEffect(() => {
 
     <div id='main'>
 
-      {aside1 && <aside style={{margin:'50px 0',padding:'10px'}}>
+      {aside1 && <aside id='bn'>
         <h3 style={{margin:'10px 0'}}>Sélectionner la catégorie:</h3>
         <div style={{display:'flex',flexDirection:'column'}}>
           <div className={isActive(1, 0) ? "active-option" : ""}>
@@ -622,7 +622,7 @@ useEffect(() => {
           {isHovered && <i className="fa-solid fa-caret-right"></i>}  
         </button></div>
       </aside>}
-      {aside2 && <aside style={{margin:'50px 0'}}>
+      {aside2 && <aside id='op'>
         <span style={{cursor:'pointer',display:'inline-block',margin:'20px 0 10px 15px'}} onClick={handleBack}><i className="fa-solid fa-caret-left"></i> Retour</span>
         <form onSubmit={handleSubmit}>
             <div style={{border:border?'2px solid rgb(15, 119, 236)':'2px solid black',width:"90%",borderRadius:'20px',padding:'10px',margin:"10px 0 10px 10px"}}>
@@ -675,12 +675,12 @@ useEffect(() => {
                 setAddressInput={setAddressInput}
               /></div> <button onClick={()=>{setFlag(true);document.body.style.overflow='unset';setMapVisible(false)}} style={{cursor:'pointer',position:'absolute',right:'40px',bottom:'10px',backgroundColor:'#fb9300',border:'none',outline:'none',color:'white',padding:'10px 20px',borderRadius:'10px'}}>Enregistrer</button>    
         </div>}
-      <main style={{ margin: '50px 0 0 50px',width:'100%'}}>
-        <h1 style={{margin:'20px 0'}}>{ads.length} {ads.length===1?"Annonce":"Annonces"}</h1>
+      <main id="kala">
+        <h1>{ads.length} {ads.length===1?"Annonce":"Annonces"}</h1>
   {ads.length === 0 ? (
     <p>No ads found.</p>
   ) : (
-    <div style={{display:'flex',flexWrap:'wrap',width:'100%'}}>
+    <div id='kolo'>
       {ads.map(ad => (
         <div key={ad.id} className="ad">
           {/* If you have user info from PHP, replace this */}
