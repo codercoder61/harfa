@@ -720,7 +720,9 @@ useEffect(() => {
   <div
   ref={filt}
   id="bas"
- onClick={() => {
+onClick={() => {
+  if (!aside11.current || !aside22.current || !over.current) return;
+
   if (
     (aside11.current.style.display === 'none' ||
      aside11.current.style.display === '') &&
@@ -736,6 +738,7 @@ useEffect(() => {
     over.current.style.display = 'none';
   }
 }}
+
 
 >
   <i id="fil" className="fa-solid fa-filter"></i>
