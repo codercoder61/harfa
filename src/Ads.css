@@ -264,9 +264,11 @@ aside{
 #bn{
     margin:50px 0;
     padding:10px;
+    flex-direction: column;
 }
 #op{
     margin:50px 0;
+    flex-direction: column;
 }
 #fil{
     border-radius:50%;
