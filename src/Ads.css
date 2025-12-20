@@ -266,10 +266,8 @@ aside{
     margin:50px 0;
 }
 #fil{
-    background-color:#ccc;
     border-radius:50%;
     padding:5px;
-    position:fixed;
     bottom:10px;
     right:10px;
     font-size:1.9em;
@@ -282,7 +280,7 @@ aside{
     position: fixed;
     bottom: 10px;
     right: 10px;
-    width: 20px;
+    width: 20px !important;
     height: 20px;
     text-align: center;
     display: flex;
