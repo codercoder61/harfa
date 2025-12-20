@@ -88,7 +88,8 @@
 }
 
 #first > * {
-  margin: 10px; /* set your desired margin */
+    margin: 10px auto;
+    width: 90%;
 }
 
 #first input:focus,#first textarea:focus{
@@ -143,6 +144,9 @@ select:focus{
     padding:20px;
 }
 @media screen and (max-width:450px){
+    select{
+    width: 90%;
+    }
     #fafa{
 margin:120px auto !important;
 }
