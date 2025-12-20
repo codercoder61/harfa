@@ -745,7 +745,7 @@ useEffect(() => {
 
 <div
   className="overlay"
-  style={{ display: open || !isMobile  ? 'block' : 'none' }}
+  style={{ display: open  ? 'block' : 'none' }}
   onClick={() => {setMapVisible(false);setOpen(!open)}}
 ></div>
 
