@@ -178,7 +178,7 @@ function Ads() {
 	  const [isMobile, setIsMobile] = useState(window.innerWidth < 400);
 useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 400);
+      setIsMobile(window.innerWidth > 400);
     };
 
     window.addEventListener("resize", handleResize);
