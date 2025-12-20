@@ -142,6 +142,10 @@ select:focus{
     #com{
         display:none;
     }
+    .form{
+        max-height: 90%;
+        overflow-y: scroll;
+    }
 }
 .images{
     width:100px !important;
