@@ -122,6 +122,7 @@ aside{
     padding: 5px;
     border-radius: 20px;
     cursor: pointer;
+    margin:10px auto;
 }
 .type:hover{
 
