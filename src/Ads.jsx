@@ -724,7 +724,7 @@ useEffect(() => {
     if (
       aside11.current.style.display === 'none' ||
       aside11.current.style.display === '' || 
-      over.current.style.display = 'none'
+      over.current.style.display === 'none'
     ) {
       aside11.current.style.display = 'flex';
       over.current.style.display = 'block';
