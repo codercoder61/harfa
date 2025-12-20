@@ -399,7 +399,6 @@ useEffect(() => {
 
     const handleBack = ()=>{
       setAside1(true);
-		 aside11.current.style.display = 'flex';
       setAside2(false)
     }
 
@@ -727,7 +726,7 @@ useEffect(() => {
 <div
   ref={filt}
   id="bas"
-  onClick={() => setOpen(true)}
+  onClick={() => setOpen(!open)}
 >
   <i id="fil" className="fa-solid fa-filter"></i>
 </div>
