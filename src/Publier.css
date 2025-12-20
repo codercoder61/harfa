@@ -87,6 +87,10 @@
     margin-right: 5px;
 }
 
+#first > * {
+  margin: 10px; /* set your desired margin */
+}
+
 #first input:focus,#first textarea:focus{
     border: 1px solid rgb(15, 119, 236);
     outline: 1px solid rgb(15, 119, 236);
