@@ -13,11 +13,11 @@
         height: fit-content;
         width: 90%;
     }
-.overlay {
+.overlayy {
   transition: opacity 0.3s ease;
 }
 
-.overlay{
+.overlayy{
     background-color: rgb(0, 0, 0);
     opacity: 0.5;
     width: 100%;
