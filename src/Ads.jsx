@@ -175,6 +175,8 @@ const SelectLocationMap = ({ position, setPosition, addressInput, setAddressInpu
 
 function Ads() {
 	const aside11 = useRef(null)
+	const [open, setOpen] = useState(false);
+
 	const aside22 = useRef(null)
 	const filt = useRef(null)
 	const over = useRef(null)
@@ -458,7 +460,7 @@ useEffect(() => {
 
     <div id='main'>
 
-      {aside1 && <aside ref={aside11} id='bn'>
+      {aside1 && <aside style={{display: open ? 'flex' : 'none'}} ref={aside11} id='bn'>
         <h3 style={{margin:'10px 0'}}>Sélectionner la catégorie:</h3>
         <div style={{display:'flex',flexDirection:'column'}}>
           <div className={isActive(1, 0) ? "active-option" : ""}>
@@ -627,7 +629,7 @@ useEffect(() => {
           {isHovered && <i className="fa-solid fa-caret-right"></i>}  
         </button></div>
       </aside>}
-      {aside2 && <aside ref={aside22} id='op'>
+      {aside2 && <aside style={{display: open ? 'flex' : 'none'}} ref={aside22} id='op'>
         <span style={{cursor:'pointer',display:'inline-block',margin:'20px 0 10px 15px'}} onClick={handleBack}><i className="fa-solid fa-caret-left"></i> Retour</span>
         <form onSubmit={handleSubmit}>
             <div style={{border:border?'2px solid rgb(15, 119, 236)':'2px solid black',width:"90%",borderRadius:'20px',padding:'10px',margin:"10px 0 10px 10px"}}>
@@ -720,23 +722,7 @@ useEffect(() => {
   <div
   ref={filt}
   id="bas"
-onClick={() => {
-  if (!aside11.current || !aside22.current || !over.current) return;
-
-  if (
-    (aside11.current.style.display === 'none' ||
-     aside11.current.style.display === '') &&
-    (over.current.style.display === 'none' ||
-     over.current.style.display === '')
-  ) {
-    aside11.current.style.display = 'flex';
-    aside22.current.style.display = 'flex';
-    over.current.style.display = 'block';
-  } else {
-    aside11.current.style.display = 'none';
-    aside22.current.style.display = 'none';
-    over.current.style.display = 'none';
-  }
+onClick={() => setOpen(true)}
 }}
 
 
@@ -744,7 +730,9 @@ onClick={() => {
   <i id="fil" className="fa-solid fa-filter"></i>
 </div>
 
-	  <div ref={over} className="overlay"></div>
+	  <div className="overlay"
+  style={{ display: open ? 'block' : 'none' }}
+  onClick={() => setOpen(false)}></div>
   </>
   )
 }
