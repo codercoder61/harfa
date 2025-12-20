@@ -313,6 +313,8 @@ aside{
     }
     #bn{
         display:none;
+        max-height: 90%;
+        overflow-y: auto;
     }
     #op{
         display:none;
