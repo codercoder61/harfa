@@ -37,7 +37,7 @@ const logout = () => {
         >
           LOGOUT
         </span>
-        <div style={{cursor:'pointer',borderRadius:'10px',backgroundColor:"#ff4c59",color:"white",padding:'10px'}}>
+        <div style={{cursor:'pointer',width: 'max-content',borderRadius:'10px',backgroundColor:"#ff4c59",color:"white",padding:'10px'}}>
             <i className="fa-solid fa-plus"></i>
             <Link id='share' to="/publier"><span>Publier annonce</span></Link>
         </div></>
