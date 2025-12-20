@@ -176,10 +176,10 @@ const SelectLocationMap = ({ position, setPosition, addressInput, setAddressInpu
 function Ads() {
 	const [open, setOpen] = useState(false);
 	const [loading, setLoading] = useState(true);
-	  const [isMobile, setIsMobile] = useState(window.innerWidth < 400);
+	  const [isMobile, setIsMobile] = useState(window.innerWidth < 450);
 useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 400);
+      setIsMobile(window.innerWidth < 450);
     };
 
     window.addEventListener("resize", handleResize);
