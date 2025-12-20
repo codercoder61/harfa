@@ -745,7 +745,7 @@ useEffect(() => {
 
 <div
   className="overlay"
-  style={{ display: open && isMobile ? 'block' : 'none' }}
+  style={{ display: !open && isMobile ? 'block' : 'none' }}
   onClick={() => setOpen(false)}
 ></div>
 
