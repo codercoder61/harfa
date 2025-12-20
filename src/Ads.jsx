@@ -276,6 +276,7 @@ const handleFindNearby = (adsData) => {
   return -1; // entreprise not found
 }
     const sendData = async () => {
+		setLoading(true)
   const formData = new FormData();
 
   const token = JSON.parse(localStorage.getItem("token"));
