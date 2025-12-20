@@ -720,22 +720,23 @@ useEffect(() => {
   <div
   ref={filt}
   id="bas"
-  onClick={() => {
-    if (
-      (aside11.current.style.display === 'none' ||
+ onClick={() => {
+  if (
+    (aside11.current.style.display === 'none' ||
      aside11.current.style.display === '') &&
     (over.current.style.display === 'none' ||
-     over.current.style.display === '')'
-	) {
-      aside11.current.style.display = 'flex';
-      aside22.current.style.display = 'flex';
-      over.current.style.display = 'block';
-    } else {
-      aside11.current.style.display = 'none';
-      aside22.current.style.display = 'none';
-      over.current.style.display = 'none';
-    }
-  }}
+     over.current.style.display === '')
+  ) {
+    aside11.current.style.display = 'flex';
+    aside22.current.style.display = 'flex';
+    over.current.style.display = 'block';
+  } else {
+    aside11.current.style.display = 'none';
+    aside22.current.style.display = 'none';
+    over.current.style.display = 'none';
+  }
+}}
+
 >
   <i id="fil" className="fa-solid fa-filter"></i>
 </div>
