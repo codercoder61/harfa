@@ -696,7 +696,7 @@ useEffect(() => {
                 setPosition={setPosition}
                 addressInput={addressInput}
                 setAddressInput={setAddressInput}
-              /></div> <button onClick={()=>{setFlag(true);document.body.style.overflow='unset';setMapVisible(false)}} style={{cursor:'pointer',position:'absolute',right:'40px',bottom:'10px',backgroundColor:'#fb9300',border:'none',outline:'none',color:'white',padding:'10px 20px',borderRadius:'10px'}}>Enregistrer</button>    
+              /></div> <button onClick={()=>{setFlag(true);document.body.style.overflow='unset';setMapVisible(false)}} style={{cursor:'pointer',backgroundColor:'#fb9300',border:'none',outline:'none',color:'white',padding:'10px 20px',borderRadius:'10px'}}>Enregistrer</button>    
         </div>}
       <main id="kala">
         <h1>{ads.length} {ads.length===1?"Annonce":"Annonces"}</h1>
