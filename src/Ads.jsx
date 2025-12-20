@@ -732,7 +732,7 @@ useEffect(() => {
   
 </main>
 
-    {isMapVisible && <div className='overlay'></div>}
+    {isMapVisible && <div className='overlayy'></div>}
       
     </div>
 <div
