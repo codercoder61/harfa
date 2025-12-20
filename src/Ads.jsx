@@ -473,7 +473,7 @@ useEffect(() => {
     <div id='main'>
 
       {aside1 && <aside style={{
-    display: open && isMobile ? "flex" : "none"
+    display: isMobile ? "none" : open? "flex": "none"
   }} ref={aside11} id='bn'>
         <h3 style={{margin:'10px 0'}}>Sélectionner la catégorie:</h3>
         <div style={{display:'flex',flexDirection:'column'}}>
@@ -644,7 +644,7 @@ useEffect(() => {
         </button></div>
       </aside>}
       {aside2 && <aside style={{
-    display: open && isMobile ? "flex" : "none"
+    display: isMobile ? "none" : open? "flex": "none"
   }} ref={aside22} id='op'>
         <span style={{cursor:'pointer',display:'inline-block',margin:'20px 0 10px 15px'}} onClick={handleBack}><i className="fa-solid fa-caret-left"></i> Retour</span>
         <form onSubmit={handleSubmit}>
