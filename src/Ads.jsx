@@ -622,7 +622,7 @@ useEffect(() => {
 
 
 <div style={{textAlign:'center',width:'100%',margin:"auto"}}>
-<button onClick={()=>{aside22.current.style.display = 'flex';setAside1(false);setAside2(true)}} style={{alignItems:'center',justifyContent:'center',backgroundColor:isHovered?"#2455cc":"#2E6BFF"}} onMouseLeave={()=>{setIsHovered(false)}} onMouseEnter={()=>{setIsHovered(true)}} className="conf">
+<button onClick={()=>{setAside1(false);setAside2(true);aside22.current.style.display = 'flex';}} style={{alignItems:'center',justifyContent:'center',backgroundColor:isHovered?"#2455cc":"#2E6BFF"}} onMouseLeave={()=>{setIsHovered(false)}} onMouseEnter={()=>{setIsHovered(true)}} className="conf">
           Confirmer
           {isHovered && <i className="fa-solid fa-caret-right"></i>}  
         </button></div>
