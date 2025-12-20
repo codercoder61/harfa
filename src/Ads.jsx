@@ -711,7 +711,9 @@ useEffect(() => {
 
     {isMapVisible && <div className='overlay'></div>}
       
-    </div></>
+    </div>
+  <i id='fil' class="fa-solid fa-filter"></i>
+  </>
   )
 }
 
