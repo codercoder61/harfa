@@ -644,7 +644,7 @@ useEffect(() => {
         </button></div>
       </aside>}
       {aside2 && <aside style={{
-    display:  open &&& !isMobile ? "flex": "none"
+    display:  open && !isMobile ? "flex": "none"
   }} ref={aside22} id='op'>
         <span style={{cursor:'pointer',display:'inline-block',margin:'20px 0 10px 15px'}} onClick={handleBack}><i className="fa-solid fa-caret-left"></i> Retour</span>
         <form onSubmit={handleSubmit}>
