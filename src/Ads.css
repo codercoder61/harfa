@@ -8,6 +8,9 @@
     color:#35b5a4;
     margin: 10px;
 }
+.overlay {
+  transition: opacity 0.3s ease;
+}
 
 #main aside div div{
     display: flex;
