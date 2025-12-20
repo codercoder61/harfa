@@ -223,6 +223,7 @@ function deg2rad(deg) {
     const [ads, setAds] = useState([]);
 
 const handleFindNearby = (adsData) => {
+	console.log(adsData)
 	if(adsData){
 		  if (!position?.lat || !position?.lng) return;
 
