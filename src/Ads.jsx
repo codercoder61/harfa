@@ -656,7 +656,7 @@ useEffect(() => {
            
 
             <span style={{color:'gray',margin:'10px'}}>Choisir position géographique</span><br/>
-            <button onClick={()=>{setMapVisible(true)}}className="conf2"><i className="fa-regular fa-map"></i> Ouvrir la carte</button><br/>
+            <button onClick={()=>{setMapVisible(true)}} className="conf2"><i className="fa-regular fa-map"></i> Ouvrir la carte</button><br/>
             <span style={{color:'gray',margin:'10px'}}>Salaire/Prix</span><br/>
 
             <div style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
@@ -745,7 +745,7 @@ useEffect(() => {
 
 <div
   className="overlay"
-  style={{ display: open  ? 'block' : 'none' }}
+  style={{ display: open || !isMobile  ? 'block' : 'none' }}
   onClick={() => {setMapVisible(false);setOpen(!open)}}
 ></div>
 
