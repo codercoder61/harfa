@@ -349,7 +349,7 @@ const handleCategoryChange = (id) => {
       </div>
 
         </div>
-        <div style={{flex:2,padding:'20px'}}>
+        <div id='com'>
             <h2>Comment définir mon annonce</h2>
             <p>Choisir la bonne catégorie lors de l'insertion d'une annonce peut aider à augmenter la visibilité, la pertinence et l'efficacité, et éviter tout potentiel refus.<br/><br/>
 Il est important d'inclure une adresse postale claire et précise pour que les clients potentiels puissent facilement vous trouver.<br/><br/>
